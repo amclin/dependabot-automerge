@@ -10,7 +10,7 @@ on:
     branches: [master]
     types:
       - completed
-  workflow_dispatch: # allow to manually start the workflow
+  # TODO: renable later workflow_dispatch: # allow to manually start the workflow
 
 jobs:
   release:
