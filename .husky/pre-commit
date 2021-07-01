@@ -1,4 +1,7 @@
 #!/bin/sh
+# Disable Husky hooks on CI environments
+[ -n "$CI" ] && exit 0
+
 . "$(dirname "$0")/_/husky.sh"
 
 npm test
