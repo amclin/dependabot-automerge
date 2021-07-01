@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run lint",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,8 @@
     "workflow"
   ],
   "author": {
-    "name" : "Anthony McLin",
-    "url" : "https://anthonymclin.com"
+    "name": "Anthony McLin",
+    "url": "https://anthonymclin.com"
   },
   "license": "MIT",
   "private": true,
@@ -30,11 +31,15 @@
   },
   "homepage": "https://github.com/amclin/dependabot-automerge#readme",
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "eslint": "^7.29.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-md": "^1.0.19",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-yaml": "^0.5.0"
+    "eslint-plugin-yaml": "^0.5.0",
+    "husky": "^7.0.0"
   }
 }
