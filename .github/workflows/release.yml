@@ -1,16 +1,18 @@
 # This workflow will run tests using node and then publish a package to GitHub Packages when a successful unit test
-# has been run on master.
+# has been run on main.
 # For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 
 name: Release
 
 on:
-  workflow_run: # Normal workflow is triggered on master branch after successful unit tests
+  workflow_run:
     workflows: ['Tests']
-    branches: [master]
+    branches: [main]
     types:
       - completed
-  # TODO: renable later workflow_dispatch: # allow to manually start the workflow
+  # workflow_dispatch: # allow to manually start the workflow
+  # this is diabled because there is an explicit check for completion of
+  # the test workflow below
 
 jobs:
   release:
