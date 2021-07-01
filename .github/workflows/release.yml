@@ -6,7 +6,7 @@ name: Release
 
 on:
   workflow_run: # Normal workflow is triggered on master branch after successful unit tests
-    workflows: ['Run Tests']
+    workflows: ['Tests']
     branches: [master]
     types:
       - completed
