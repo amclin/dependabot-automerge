@@ -1,0 +1,12 @@
+env:
+  browser: false
+  es2021: true
+plugins:
+  - yaml
+extends:
+  - standard
+  - plugin:yaml/recommended
+parserOptions:
+  ecmaVersion: 12
+  sourceType: module
+rules: {}
