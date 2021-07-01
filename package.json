@@ -1,6 +1,6 @@
 {
   "name": "dependabot-automerge",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "GitHub action to automerge pull requests created by Dependabot",
   "main": "index.js",
   "scripts": {
@@ -58,7 +58,8 @@
       {
         "name": "beta",
         "prerelease": true
-      }, {
+      },
+      {
         "name": "alpha",
         "prerelease": true
       }
