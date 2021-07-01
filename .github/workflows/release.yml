@@ -5,12 +5,11 @@
 name: Release
 
 on:
-  workflow_run: # Normal workflow is triggered on master branch after successful unit tests
+  workflow_run:
     workflows: ['Tests']
     branches: [master]
     types:
       - completed
-  # TODO: renable later workflow_dispatch: # allow to manually start the workflow
 
 jobs:
   release:

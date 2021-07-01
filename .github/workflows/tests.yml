@@ -8,7 +8,6 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  # TODO: renable later workflow_dispatch: # allow to manually start the workflow
 
 jobs:
   test:
