@@ -1,3 +1,10 @@
+## [0.1.3](https://github.com/amclin/dependabot-automerge/compare/v0.1.2...v0.1.3) (2021-07-06)
+
+
+### Bug Fixes
+
+* use correct syntax for action steps ([d9f71d5](https://github.com/amclin/dependabot-automerge/commit/d9f71d539e2036d5ac34c4ffb941a7bb24219323))
+
 ## [0.1.2](https://github.com/amclin/dependabot-automerge/compare/v0.1.1...v0.1.2) (2021-07-06)
 
 
