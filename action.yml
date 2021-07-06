@@ -5,20 +5,13 @@ description: automatically merge pull requests created by Dependabot
 runs:
   using: composite
 
-  jobs:
-    automerge:
-
-      strategy:
-        matrix:
-          pr-title-prefixes: ['chore(deps-dev):']
-
-      steps:
-      - name: Automerge Dependabot Pull Requests
-        description: Merging pull request prefixed with ${{ matrix.pr-title-prefixes }}
-        uses: ridedott/merge-me-action@v2
-        if: |
-          github.actor == 'dependabot[bot]' &&
-          github.event_name == 'pull_request' &&
-          startsWith(github.event.pull_request.title, ${{ matrix.pr-title-prefixes }})
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  steps:
+  - name: Automerge Dependabot Pull Requests
+    description: Merging pull request prefixed with `chore(deps-dev):`
+    uses: ridedott/merge-me-action@v2
+    if: |
+      github.actor == 'dependabot[bot]' &&
+      github.event_name == 'pull_request' &&
+      startsWith(github.event.pull_request.title, 'chore(deps-dev):')
+    with:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
