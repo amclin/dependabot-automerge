@@ -9,4 +9,4 @@ This repo was created with the intention of building a simplified action for man
 
 Since I have no intention of recreating all the internals of other actions to do this, this project is at a standstill and will be archived. I may resurrect in the future if GitHub provides the full workflows fuctionality at the action level, but I'm not holding my breath.
 
-Instead, please try [https://github.com/marketplace/actions/merge-me](Merge Me!) or [https://github.com/marketplace/actions/dependabot-auto-merge](Dependabot Automerge). I've been playing with both, and **Merge Me** is easier to configure and more reliable.
+Instead, please try [Merge Me!](https://github.com/marketplace/actions/merge-me) or [Dependabot Automerge](https://github.com/marketplace/actions/dependabot-auto-merge). I've been playing with both, and **[Merge Me!](https://github.com/marketplace/actions/merge-me)** seems to be easier to configure and more reliable.
